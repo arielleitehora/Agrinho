@@ -1,0 +1,97 @@
+/* Estilo com fundo de cores que mudam */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #a8edea; /* cor inicial */
+  transition: background-color 1s ease;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Fundo com cores variáveis usando classes (serão alteradas pelo JS) */
+body.color1 { background-color: #a8edea; }
+body.color2 { background-color: #fbc7d4; }
+body.color3 { background-color: #ffe156; }
+body.color4 { background-color: #d4fc79; }
+body.color5 { background-color: #89f7fe; }
+
+header {
+  background-color: #388e3c;
+  color: #fff;
+  padding: 25px 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #2e7d32;
+  font-size: 2em;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #66bb6a;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #558b2f;
+}
+
+footer {
+  background-color: #388e3c;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* Responsividade */
+@media(max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+  section {
+    padding: 10px;
+  }
+}
